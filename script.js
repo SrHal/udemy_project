@@ -1,19 +1,26 @@
-var money = +prompt('What is your mounthly budget?:', ''),
-date = prompt('Enter date:', ''),
-value2 = +prompt('How much?:', ''),
-value1 = prompt('Enter a mandatory expense item for this month:', 'summ'),
-expenses = {};
-expenses['value1'] = value2;
+let money = +prompt('What is your mounthly budget:', ''),
+    date = prompt('Enter date (YYYY-MM-DD):', '');
 
-var appDate = {
-    // value1: prompt('Enter a mandatory expense item for this month:', 'summ'),
+let appDate = {
     budget: money,
     timeData: date,
-    expenses: expenses,
+    expenses: {},
     optionalExpenses: {},
     income: [],
     savings: false
 };
 
+let a1 = prompt('Enter a mandatory expense item for this month:', ''),
+    a2 = +prompt('How much:', ''),
+    a3 = prompt('Enter a mandatory expense item for this month:', ''),
+    a4 = +prompt('How much:', '');
 
-console.log(appDate);
+appDate.expenses.a1 = a2;
+appDate.expenses.a3 = a4;
+
+console.log(appDate.expenses.a1);
+console.log(a2);
+console.log(appDate.expenses.a3);
+console.log(a4);
+
+alert(appDate.budget / 30);
