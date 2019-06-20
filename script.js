@@ -18,9 +18,4 @@ let a1 = prompt('Enter a mandatory expense item for this month:', ''),
 appDate.expenses.a1 = a2;
 appDate.expenses.a3 = a4;
 
-console.log(appDate.expenses.a1);
-console.log(a2);
-console.log(appDate.expenses.a3);
-console.log(a4);
-
 alert(appDate.budget / 30);
