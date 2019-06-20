@@ -1,5 +1,3 @@
-'use strict';
-
 let money, date;
 
 start();
