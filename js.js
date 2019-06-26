@@ -1,41 +1,32 @@
-for (let i = 0; i < 10; i++) {
-    if (i == 5) {
-        continue;
-    }
-    console.log(i);
-}
+// let box = document.getElementById('box'),
+//     btn = document.getElementsByTagName('button'),
+//     circle = document.getElementsByClassName('circle'),
+//     heart = document.querySelectorAll('.heart'),
+//     oneHeart = document.querySelector('.heart'),
+//     wrapper = document.querySelector('.wrapper');
 
-// let ans = prompt('', ''),
-//     arr = [];
+// box.style.backgroundColor = 'blue';
+// btn[1].style.borderRadius = '5px';
 
-// arr = ans.split(', ');
-// console.log(arr);
+// circle[0].style.backgroundColor = 'red';
+// circle[1].style.backgroundColor = 'orange';
+// circle[2].style.backgroundColor = 'lightgreen';
 
-// let arr = ['aawe', 'zzz', 'pp', 'rqa'],
-//     i = arr.join(', ');
+// // heart.forEach(function(item) {
+// //     item.style.backgroundColor = 'lightblue';
+// // });
 
-//     console.log(arr);
-//     console.log(i);
+// let div = document.createElement('div'),
+//     text = document.createTextNode('Тут был я');
 
-let arr = [1, 5, 12, 7, 49],
-    i = arr.sort(compareNum);
+// div.classList.add('black');
 
-    function compareNum(a, b) {
-        return a - b;
-    }
+// // div.innerHTML = '<h1>Hello, World</h1>';
+// let textComment = prompt('Enter your comment: ', '');
+// div.textContent = textComment;
 
-    console.log(arr);
+// // document.body.appendChild(div);
+// // wrapper.appendChild(div);
+// document.body.insertBefore(div, circle[1]);
 
-    let soldier = {
-        health: 100,
-        armor: 100
-    }
-
-    let john = {
-        health: 80
-    }
-
-    john.__proto__ = soldier;
-
-console.log(john);
-console.log(john.armor);
+// console.log(div);
