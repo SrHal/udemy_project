@@ -33,9 +33,9 @@
 
 // lesson 6
 
-let btn = document.querySelectorAll('button'),
-	wrap = document.querySelector('.wrapper'),
-	link = document.querySelector('a');
+// let btn = document.querySelectorAll('button'),
+// 	wrap = document.querySelector('.wrapper'),
+// 	link = document.querySelector('a');
 
 // btn[0].onclick = function() {
 //     alert('You pushed first button');
@@ -53,19 +53,69 @@ let btn = document.querySelectorAll('button'),
 // 	console.log('Event: ' + event.type + ' with element ' + event.target);
 // });
 
-link.addEventListener('click', function(event){
-	event.preventDefault();
-	console.log('Event: ' + event.type + ' with element ' + event.target);
-});
+// link.addEventListener('click', function(event){
+// 	event.preventDefault();
+// 	console.log('Event: ' + event.type + ' with element ' + event.target);
+// });
 
-btn.forEach(function(item) {
-	item.addEventListener('mouseleave', function() {
-		console.log('Exit!');
-	});
-});
+// btn.forEach(function(item) {
+// 	item.addEventListener('mouseleave', function() {
+// 		console.log('Exit!');
+// 	});
+// });
 
 
 
 // btn[0].addEventListener('mouseenter', function() {
 //     alert('You hovered on the first button');
 // });
+
+
+// Lesson 7 
+
+// let timerId = setTimeout(sayHello, 3000);
+// clearTimeout(timerId);
+
+// let timerId = setInterval(sayHello, 3000);
+// clearTimeout(timerId);
+
+// function sayHello() {
+//     console.log('Hello, World!');
+// }
+
+// let timerId = setTimeout(function log(){
+//     console.log('Hey');
+//     setTimeout(log, 2000);
+// }, 2000);
+
+let btn = document.querySelector('.btn'),
+elem = document.querySelector('.box');
+
+function myAnimation () {
+    let pos = 0;
+
+    let id = setInterval(frame, 10);
+
+    function frame() {
+        if (pos == 300) {
+            clearInterval(id);
+        } else {
+            pos++;
+            elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px';
+        }
+    }
+}
+
+btn.addEventListener('click', myAnimation);
+
+let btnBlock = document.querySelector('.btn-block'),
+btns = document.getElementsByTagName('button');
+
+btnBlock.addEventListener('click', function(event) {
+    // if (event.target && event.target.tagName == 'BUTTON') {
+    // if (event.target && event.target.classList.contains('first')) {
+    if (event.target && event.target.matches('button.first')) {
+        console.log('check');
+    }
+});

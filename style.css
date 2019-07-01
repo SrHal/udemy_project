@@ -1,4 +1,4 @@
-.box {
+/* .box {
   width: 150px;
   height: 150px;
   background-color: red;
@@ -75,4 +75,31 @@ button {
 	margin-bottom: 30px;
 	margin-top: 30px;
 	color: #fff;
+} */
+
+/* Lesson 7 */
+
+.wrapper {
+   border: 2px solid red;
+   width: 350px;
+   height: 350px;
+
+   margin: 20px;
+   position: relative;
+}
+
+.box {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: lightblue;
+   width: 50px;
+   height: 50px;
+}
+
+button {
+   border: 3px solid #000;
+   background-color: yellow;
+   width: 90px;
+   height: 30px;
 }
