@@ -79,7 +79,7 @@ button {
 
 /* Lesson 7 */
 
-.wrapper {
+/* .wrapper {
    border: 2px solid red;
    width: 350px;
    height: 350px;
@@ -102,4 +102,22 @@ button {
    background-color: yellow;
    width: 90px;
    height: 30px;
+} */
+
+.box {
+   width: 400px;
+   height: 350px;
+   overflow: scroll;
+   margin: 0 auto;
+   margin-top: 50px;
+   padding: 10px;
+   border: 15px solid rgb(180, 102, 102);
+   box-sizing: border-box;
+}
+
+button {
+   width: 100px;
+   height: 40px;
+   display: block;
+   margin: 20px auto 0;
 }
